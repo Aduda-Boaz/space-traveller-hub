@@ -47,3 +47,24 @@ a:active {
   height: 4rem;
   margin-right: 1rem;
 }
+
+.Horizontal-Card {
+  flex-direction: row !important;
+  margin: 1rem;
+}
+
+.Rocket-Img {
+  height: 12rem;
+  width: 18rem;
+}
+
+@media (max-width: 768px) {
+  .Horizontal-Card {
+    flex-direction: column !important;
+    margin: 1rem;
+  }
+
+  .Rocket-Img {
+    width: 100%;
+  }
+}
