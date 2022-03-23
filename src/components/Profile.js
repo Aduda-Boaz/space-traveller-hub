@@ -3,7 +3,7 @@ import React from 'react';
 function Missions() {
   return (
     <div>
-      Profile
+      My Profile comes here soon
     </div>
   );
 }
