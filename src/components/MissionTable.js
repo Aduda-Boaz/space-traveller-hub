@@ -5,8 +5,8 @@ const MissionTable = () => {
   const msn = useSelector((state) => state.missions);
 
   return (
-    <div>
-      <table className="table-bordered table-striped table-hover">
+    <div className="container table-responsive">
+      <table className="table-bordered table-striped table">
         <thead>
           <tr className="fs-5">
             <th>Mission</th>
