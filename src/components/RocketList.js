@@ -8,8 +8,8 @@ function RocketListCard({
   flickrImages,
 }) {
   return (
-    <Card key={id} expand="md" className="HorizontalCard">
-      <Card.Img variant="left" src={flickrImages} className="Rocket-Image" />
+    <Card key={id} expand="md" className="Horizontal-Card">
+      <Card.Img variant="left" src={flickrImages} className="Rocket-Img" />
       <Card.Body>
         <Card.Title>{rocketName}</Card.Title>
         <Card.Text>{description}</Card.Text>
