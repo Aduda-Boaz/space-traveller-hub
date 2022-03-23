@@ -1,9 +1,10 @@
 import React from 'react';
+import MissionTable from './MissionTable';
 
 function Missions() {
   return (
     <div>
-      Missions
+      <MissionTable />
     </div>
   );
 }
