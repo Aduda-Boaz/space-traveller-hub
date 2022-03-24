@@ -23,6 +23,7 @@ const MissionTable = () => {
                 id={mission.mission_id}
                 name={mission.mission_name}
                 description={mission.description}
+                reserved={mission.reserved}
               />
             ))
           }
