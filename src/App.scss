@@ -50,12 +50,16 @@ a:active {
 
 .Horizontal-Card {
   flex-direction: row !important;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 .Rocket-Img {
-  height: 12rem;
-  width: 18rem;
+  height: 16rem;
+  width: 21rem;
+}
+
+.Rocket-btn {
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {

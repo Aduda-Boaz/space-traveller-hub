@@ -14,8 +14,8 @@ const MissionList = ({
       <td>
         {
           reserved
-            ? <span className="badge bg-info">Active Member</span>
-            : <span className="badge bg-secondary">Not a Member</span>
+            ? <span className="badge bg-success">Active Member</span>
+            : <span className="badge bg-warning">Not a Member</span>
         }
       </td>
       <td>
@@ -24,7 +24,7 @@ const MissionList = ({
               ? (
                 <button
                   type="button"
-                  className="btn btn-outline-info"
+                  className="btn btn-outline-danger"
                   onClick={() => dispatch(leaveMission(id))}
                 >
                   Leave mission
@@ -33,10 +33,10 @@ const MissionList = ({
               : (
                 <button
                   type="button"
-                  className="btn btn-outline-secondary"
+                  className="btn btn-outline-primary"
                   onClick={() => dispatch(joinMission(id))}
                 >
-                  Join Mission
+                  Join
                 </button>
               )
           }

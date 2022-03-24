@@ -1,17 +1,22 @@
-import { Card, Button } from 'react-bootstrap';
+import React from 'react';
+import { Card, Button, Badge } from 'react-bootstrap';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { reserveRocketAction } from '../redux/rockets';
+import { reserveRocketAction, cancelReserveAction } from '../redux/rockets';
 
 function RocketListCard({
   id,
   rocketName,
   description,
   flickrImages,
+  reserved,
 }) {
   const dispatch = useDispatch();
   const rocketReserved = (id) => {
     dispatch(reserveRocketAction(id));
+  };
+  const cancelReserved = (id) => {
+    dispatch(cancelReserveAction(id));
   };
 
   return (
@@ -19,8 +24,27 @@ function RocketListCard({
       <Card.Img variant="left" src={flickrImages} className="Rocket-Img" />
       <Card.Body>
         <Card.Title>{rocketName}</Card.Title>
-        <Card.Text>{description}</Card.Text>
-        <Button variant="primary" className="Reserve-Rocket" onClick={() => rocketReserved(id)}>Reserve Rocket</Button>
+        {
+          reserved
+            ? (
+              <div>
+                <Card.Text>
+                  <Badge bg="success">Reserved</Badge>
+                  {' '}
+                  {description}
+                </Card.Text>
+                <Button variant="outline-warning" className="Cancel-Button Rocket-btn" onClick={() => cancelReserved(id)}>Cancel Reservation</Button>
+              </div>
+            )
+            : (
+              <div>
+                <div>
+                  <Card.Text>{description}</Card.Text>
+                </div>
+                <Button variant="primary" className="Reserve-Rocket Rocket-btn" onClick={() => rocketReserved(id)}>Reserve Rocket</Button>
+              </div>
+            )
+        }
       </Card.Body>
     </Card>
   );
@@ -31,6 +55,7 @@ RocketListCard.propTypes = {
   rocketName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   flickrImages: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 
 export default RocketListCard;
