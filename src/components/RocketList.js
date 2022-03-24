@@ -33,7 +33,7 @@ function RocketListCard({
                   {' '}
                   {description}
                 </Card.Text>
-                <Button variant="outline-warning" className="Cancel-Button" onClick={() => cancelReserved(id)}>Cancel Reservation</Button>
+                <Button variant="outline-warning" className="Cancel-Button Rocket-btn" onClick={() => cancelReserved(id)}>Cancel Reservation</Button>
               </div>
             )
             : (
@@ -41,7 +41,7 @@ function RocketListCard({
                 <div>
                   <Card.Text>{description}</Card.Text>
                 </div>
-                <Button variant="primary" className="Reserve-Rocket" onClick={() => rocketReserved(id)}>Reserve Rocket</Button>
+                <Button variant="primary" className="Reserve-Rocket Rocket-btn" onClick={() => rocketReserved(id)}>Reserve Rocket</Button>
               </div>
             )
         }
