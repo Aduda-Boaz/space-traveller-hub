@@ -6,9 +6,9 @@
 > List of available rockets are displayed in the Rockets section. The missions to join and leave are displayed in the mission section.
 > Reserved rockets and Joined missions are displayed in the My Profile section.
 
-![screenshot](./resourcs/home_page.png)
-![screenshot](./resourcs/missions.png)
-![screenshot](./resourcs/profile.png)
+![screenshot](../resourcs/home_page.png)
+![screenshot](../resourcs/missions.png)
+![screenshot](../resourcs/profile.png)
 
 ## Live Demo
 
