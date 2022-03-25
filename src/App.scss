@@ -75,4 +75,13 @@ a:active {
   .Rocket-Img {
     width: 100%;
   }
+
+  .Navigation-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Navigation-links {
+    text-align: center;
+  }
 }

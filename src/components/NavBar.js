@@ -6,14 +6,14 @@ import planet from '../resources/planet.png';
 function NavBar() {
   return (
     <Navbar activekey={window.location.pathname} expand="md" sticky="top" variant="light" bg="light" className="border-bottom Nav-bar">
-      <Container>
+      <Container className="Navigation-bar">
         <LinkContainer to="/" className="Logo-Container Nav-Link" rel="noopener noreferrer">
           <Navbar.Brand>
             <img src={planet} alt="Planet logo" className="Logo" />
             Space Travelers&apos; Hub
           </Navbar.Brand>
         </LinkContainer>
-        <div className="ms-auto d-flex">
+        <div className="ms-auto d-flex Navigation-links">
           <LinkContainer to="/" rel="noopener noreferrer" className="Nav-Link">
             <Nav.Link>Rockets</Nav.Link>
           </LinkContainer>
