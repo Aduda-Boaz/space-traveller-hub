@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container table-responsive"
+>
+  <table
+    className="table-bordered table-striped table"
+  >
+    <thead>
+      <tr
+        className="fs-5"
+      >
+        <th>
+          Mission
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;

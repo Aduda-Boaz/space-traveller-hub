@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<tr>
+  <th
+    scope="row"
+  />
+  <td
+    className="w-50"
+  />
+  <td>
+    <span
+      className="badge bg-warning"
+    >
+      Not a Member
+    </span>
+  </td>
+  <td>
+    <button
+      className="btn btn-outline-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Join
+    </button>
+  </td>
+</tr>
+`;
