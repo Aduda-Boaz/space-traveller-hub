@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<nav
+  activekey="/"
+  className="border-bottom Nav-bar navbar navbar-expand-md navbar-light bg-light sticky-top"
+>
+  <div
+    className="container"
+  >
+    <a
+      className="Logo-Container Nav-Link  active navbar-brand"
+      href="/"
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      style={Object {}}
+    >
+      <img
+        alt="Planet logo"
+        className="Logo"
+        src="planet.png"
+      />
+      Space Travelers' Hub
+    </a>
+    <div
+      className="ms-auto d-flex"
+    >
+      <a
+        className="Nav-Link  active nav-link"
+        disabled={false}
+        href="/"
+        onClick={[Function]}
+        rel="noopener noreferrer"
+        style={Object {}}
+      >
+        Rockets
+      </a>
+      <a
+        className="Nav-Link nav-link"
+        disabled={false}
+        href="/Missions/"
+        onClick={[Function]}
+        rel="noopener noreferrer"
+        style={null}
+      >
+        Missions
+      </a>
+      <a
+        className="Nav-Link nav-link"
+        disabled={false}
+        href="/Profile/"
+        onClick={[Function]}
+        rel="noopener noreferrer"
+        style={null}
+      >
+        Profile
+      </a>
+    </div>
+  </div>
+</nav>
+`;
